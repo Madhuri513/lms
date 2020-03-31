@@ -1,0 +1,39 @@
+section a:hover {
+  background-color: rgba(27, 80, 129, 0.432);
+  border-radius: 50px 50px;
+}
+section {
+  margin: 30px;
+}
+section [class="nav-link active"] {
+  background-color: rgba(24, 131, 231, 0.589);
+  border-radius: 50px 50px;
+}
+table,
+th,
+td {
+  border: 1px black solid;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 3px;
+}
+textarea {
+  margin-left: 300px;
+  padding: 10px;
+}
+.back {
+  background-color: white;
+  background-position: fixed;
+  height: 721px;
+  background-size: cover;
+}
+footer{
+  left:0;
+  right:0;
+  bottom:0;
+  background: #e0c320;
+  margin:0px;
+  position: fixed;
+  text-align: center;
+  padding:10px;
+}

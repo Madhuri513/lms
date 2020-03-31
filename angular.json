@@ -24,9 +24,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "C:/Users/Admin/Desktop/Angular Project/LMS/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "C:/Users/Admin/Desktop/Angular Project/LMS/node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+              "C:/Users/Admin/Desktop/Angular Project/LMS/node_modules/jquery/dist/jquery.min.js",
+              "C:/Users/Admin/Desktop/Angular Project/LMS/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {

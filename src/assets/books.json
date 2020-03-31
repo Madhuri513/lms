@@ -1,0 +1,67 @@
+[
+    {
+        "acc":"1",
+        "title":"Java Script",
+        "category":"Computers",
+        "author":"xyz",
+        "copies":"10",
+        "publisher":"Pearson Education",
+        "publishername":"Pearson",
+        "isbn":"1234",
+        "year":"2013",
+        "date":"2014-2-5",
+        "status":"New"
+    },
+    {
+        "acc":"2",
+        "title":"Core Java",
+        "category":"Computers",
+        "author":"abc",
+        "copies":"2",
+        "publisher":"Marshall Education",
+        "publishername":"Marshall",
+        "isbn":"5678",
+        "year":"2015",
+        "date":"2014-2-5",
+        "status":"old"
+    },
+    {
+        "acc":"3",
+        "title":"A Byte of Python",
+        "category":"Computers",
+        "author":"Swaroop C H",
+        "copies":"10",
+        "publisher":"Creative Common Association",
+        "publishername":"CCA",
+        "isbn":"6893",
+        "year":"2003",
+        "date":"2005-2-5",
+        "status":"old"
+    },
+    {
+        "acc":"4",
+        "title":"A First Course in Electrical and Computer Engineering",
+        "category":"Electricals",
+        "author":"Louis Scharf",
+        "copies":"13",
+        "publisher":"Creative Common Association",
+        "publishername":"Daniel Williamson",
+        "isbn":"2468",
+        "year":"2009",
+        "date":"2010-3-12",
+        "status":"old"
+    },
+    {
+        "acc":"5",
+        "title":"Computational Geometry",
+        "category":"Mathematics",
+        "author":"Takashi Maekawa",
+        "copies":"5",
+        "publisher":"Hyperbook Edition",
+        "publishername":"Takashi Maekawa",
+        "isbn":"1357",
+        "year":"2009",
+        "date":"2010-1-4",
+        "status":"New"
+    }
+]

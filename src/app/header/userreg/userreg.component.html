@@ -1,0 +1,119 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e0c320;">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link" routerLink="/home"><i class="fa fa-home" aria-hidden="true"></i>HOME</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link" routerLink="/about"><i class="fa fa-info-circle" aria-hidden="true"></i>ABOUT</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link" routerLink="/admin"><i class="fa fa-user" aria-hidden="true"></i>ADMIN</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']">
+                <a class="nav-link" routerLink="/user"><i class="fa fa-user" aria-hidden="true"></i>USER</a>
+            </li>
+            <li class="nav-item dropdown" [routerLinkActive]="['active']">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-book" aria-hidden="true"></i>SECTIONS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" routerLink="/adminreg">Admin Registration</a>
+                    <a class="dropdown-item" routerLink="/userreg">User Registration</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<form [formGroup]="userreg" style="width: 1450px;margin-left:150px">
+    <div class="card col-md-6">
+        <div class="card-body">
+            <h3 style="text-align: center;">Please enter the correct details</h3>
+            <hr><br>
+            <div class="form-group row ml-5">
+                <label for="fname" class="col-md-4 col-form-label">First Name<sup style="color:red;">*</sup></label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" ngModel formControlName="fname" placeholder="First Name">
+                    <span style="color: red;" *ngIf="userreg.get('fname') && userreg.get('fname').touched && userreg.get('fname').invalid">Please fill this field</span>
+                </div>
+            </div>
+            <div class="form-group row ml-5">
+                <label for="lname" class="col-md-4 col-form-label">Last Name<sup style="color:red;">*</sup></label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" ngModel formControlName="lname" placeholder="Last Name">
+                    <span style="color: red;" *ngIf="userreg.get('lname') && userreg.get('lname').touched && userreg.get('lname').invalid">Please fill this field</span>
+                </div>
+            </div>
+            <div class="form-group row ml-5">
+                <label for="rollno" class="col-md-4 col-form-label">Roll No.<sup style="color:red">*</sup></label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" ngModel formControlName="rollno" placeholder="Roll No.">
+                    <span style="color: red;" *ngIf="userreg.get('rollno') && userreg.get('rollno').touched && userreg.get('rollno').invalid">Please fill this field</span>
+                </div>
+            </div>
+            <div class="form-group row ml-5">
+                <label for="email" class="col-md-4 col-form-label">Email<sup style="color:red;">*</sup></label>
+                <div class="col-sm-5">
+                    <input type="email" class="form-control" ngModel formControlName="email" placeholder="Enter email id">
+                    <span style="color: red;" *ngIf="userreg.get('email') && userreg.get('email').touched && userreg.get('email').invalid">Please fill this field</span>
+                </div>
+            </div>
+            <div class="form-group row ml-5">
+                <label for="inputPassword" class="col-md-4 col-form-label">Password<sup style="color:red">*</sup></label>
+                <div class="col-sm-5">
+                    <input type="password" class="form-control" ngModel formControlName="inputPassword" placeholder="Password">
+                    <span style="color: red;" 
+                    *ngIf="userreg.get('inputPassword') && 
+                    userreg.get('inputPassword').touched && 
+                    userreg.get('inputPassword').invalid">Please fill this field</span>
+                </div>
+            </div>
+            <div class="form-group row ml-5">
+                <label for="ConfirmPassword" class="col-md-4 col-form-label">Confirm Password<sup style="color:red">*</sup></label>
+                <div class="col-sm-5">
+                    <input type="password" class="form-control" ngModel formControlName="confirmPassword"
+                        placeholder="Re-enter Password">
+                    <span style="color: red;" *ngIf="userreg.get('confirmPassword') && userreg.get('confirmPassword').touched && userreg.get('confirmPassword').invalid">Please fill this field</span>
+                </div>
+            </div>
+            <div class="form-group row ml-5">
+                <label for="gender" class="col-md-4 col-form-label">Gender</label>
+                <div class="col-sm-5">
+                    <input type="radio" name="gen">Male
+                    <input type="radio" name="gen">Female
+                    <input type="radio" name="gen">Others
+                </div>
+            </div>
+            <div class="form-group row ml-5">
+                <label for="dept" class="col-md-4 col-form-label">Department</label>
+                <div class="col-sm-5">
+                    <select class="form-control">
+                        <option value="-1" selected>--Select--</option>
+                        <option value="1">Computer Science Engineering</option>
+                        <option value="2">Electrical and Electronics Engineering</option>
+                        <option value="3">Electronics and communication Engineering</option>
+                        <option value="4">Civil Engineering</option>
+                        <option value="5">Mechanical Engineering</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row ml-5">
+                <label for="contact" class="col-md-4 col-form-label">Contact No.</label>
+                <div class="col-sm-5">
+                    <input type="tel" class="form-control" ngModel formControlName="contact" placeholder="Enter Contact No.">
+                    <span style="color: red;" *ngIf="userreg.get('contact') && userreg.get('contact').touched && userreg.get('contact').invalid">Please fill this field</span>
+                </div>
+            </div>
+            <br>
+            <div class="form-group col-md-4 offset-4">
+                <button type="submit" class="btn" (click)="save()" [disabled]="userreg.invalid">
+                    <i class="fa fa-cloud-upload" aria-hidden="true"></i>Save</button>
+            </div>
+        </div>
+    </div>
+</form>
+{{userreg.invalid}}
+<footer>
+    <p>Copyright<i class="fa fa-copyright"></i>2020,All rights reserved</p>
+</footer>
